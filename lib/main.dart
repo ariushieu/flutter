@@ -64,7 +64,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Danh Sach Cong Viec'),
+        title: const Text('Danh Sách Công Việc'),
       ),
       body: Column(
         children: [
@@ -76,14 +76,14 @@ class _TodoListScreenState extends State<TodoListScreen> {
                   child: TextField(
                     controller: _textFieldController,
                     decoration: const InputDecoration(
-                      labelText: 'Them cong viec moi...',
+                      labelText: 'Thêm công việc mới...',
                     ),
                   ),
                 ),
                 const SizedBox(width: 16),
                 ElevatedButton(
                   onPressed: _addTodoItem,
-                  child: const Text('Them'),
+                  child: const Text('Thêm'),
                 ),
               ],
             ),
